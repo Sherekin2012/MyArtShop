@@ -43,5 +43,22 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MyArtShop.Core\MyArtShop.Core.csproj">
+      <Project>{027e8218-cb49-4d84-bc6e-8a9ab9d26582}</Project>
+      <Name>MyArtShop.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyArtShop.Services\MyArtShop.Services.csproj">
+      <Project>{1de35940-f316-4201-8bb9-ea69baf1797d}</Project>
+      <Name>MyArtShop.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyArtShopDataAccess.InMemory\MyArtShop.DataAccess.InMemory.csproj">
+      <Project>{4eca32c2-c327-43ee-b181-eb7ebdc1d929}</Project>
+      <Name>MyArtShop.DataAccess.InMemory</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
