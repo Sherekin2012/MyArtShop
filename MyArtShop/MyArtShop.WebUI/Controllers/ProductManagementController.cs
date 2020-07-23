@@ -114,7 +114,7 @@ namespace MyArtShop.WebUI.Controllers
             {
                 context.Delete(Id);
                 context.Commit();
-                return View(productToDelete);
+                return RedirectToAction("Index");
             }
         }
     }
