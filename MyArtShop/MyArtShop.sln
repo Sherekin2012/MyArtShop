@@ -7,9 +7,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyArtShop.Core", "MyArtShop
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyArtShop.Services", "MyArtShop.Services\MyArtShop.Services.csproj", "{1DE35940-F316-4201-8BB9-EA69BAF1797D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyArtShopDataAccess.SQL", "MyArtShopDataAccess.SQL\MyArtShopDataAccess.SQL.csproj", "{9C85077B-6D15-4057-A9F0-E280FA8427BC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyArtShop.DataAccess.SQL", "MyArtShopDataAccess.SQL\MyArtShop.DataAccess.SQL.csproj", "{9C85077B-6D15-4057-A9F0-E280FA8427BC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyArtShopDataAccess.InMemory", "MyArtShopDataAccess.InMemory\MyArtShopDataAccess.InMemory.csproj", "{4ECA32C2-C327-43EE-B181-EB7EBDC1D929}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyArtShop.DataAccess.InMemory", "MyArtShopDataAccess.InMemory\MyArtShop.DataAccess.InMemory.csproj", "{4ECA32C2-C327-43EE-B181-EB7EBDC1D929}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyArtShop.WebUI", "MyArtShop.WebUI\MyArtShop.WebUI.csproj", "{F751D022-26E1-4D58-86EB-EF6FC62ACE0C}"
 EndProject

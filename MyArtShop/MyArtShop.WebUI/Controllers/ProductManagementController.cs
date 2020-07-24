@@ -117,9 +117,6 @@ namespace MyArtShop.WebUI.Controllers
                 return RedirectToAction("Index");
             }
         }
-            
-
-        
     }
 }
 
