@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace MyArtShop.Core.Models
 {
-   public class Product
+    public class Product
     {
         public string Id { get; set; }
 
@@ -23,7 +23,7 @@ namespace MyArtShop.Core.Models
         public string Category { get; set; }
         public string Image { get; set; }
 
-        public Product ()
+        public Product()
         {
             this.Id = Guid.NewGuid().ToString();
         }

@@ -23,7 +23,7 @@ namespace MyArtShopDataAccess.InMemory
 
         public void Commit()
         {
-            cache["products"] = productCategories;
+            cache["productCategories"] = productCategories;
         }
 
         public void Insert(ProductCategory item)
@@ -41,17 +41,17 @@ namespace MyArtShopDataAccess.InMemory
             }
             else
             {
-                throw new Exception("Product not found");
+                throw new Exception("Product Category not found");
             }
         }
 
-        public Product Find(string Id)
+        public ProductCategory Find(string Id)
         {
-            Product product = productCategories.Find(item => item.Id == Id);
+            ProductCategory productCategory = productCategories.Find(item => item.Id == Id);
 
-            if (product != null)
+            if (productCategory != null)
             {
-                return product;
+                return productCategory;
             }
             else
             {
@@ -66,7 +66,7 @@ namespace MyArtShopDataAccess.InMemory
 
         public void Delete(string Id)
         {
-            Product productCategoryToDelete = productCategories.Find(item => item.Id == Id);
+            ProductCategory productCategoryToDelete = productCategories.Find(item => item.Id == Id);
             if (productCategoryToDelete != null)
             {
                 productCategories.Remove(productCategoryToDelete);

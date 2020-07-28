@@ -27,6 +27,7 @@ namespace MyArtShopDataAccess.InMemory
             cache["products"] = products;
         }
 
+
         public void Insert(Product item)
         {
             products.Add(item);
