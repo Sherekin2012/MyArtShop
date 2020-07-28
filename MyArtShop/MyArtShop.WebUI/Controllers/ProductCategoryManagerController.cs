@@ -10,16 +10,16 @@ namespace MyArtShop.WebUI.Controllers
 {
     public class ProductCategoryManagerController : Controller
     {
-        ProductCategoryRepository context;
+        InMemoryRepository<ProductCategory> context;
 
         public ProductCategoryManagerController()
         {
-            context = new ProductCategoryRepository();
+            context = new InMemoryRepository<ProductCategory>();
         }
         // GET: ProductManagement
         public ActionResult Index()
         {
-            List<ProductCategory> productCategories = context.Collection().ToList();
+            List<ProductCategory> productCategories = context.Collections().ToList();
             return View(productCategories);
         }
 

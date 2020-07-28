@@ -12,19 +12,19 @@ namespace MyArtShop.WebUI.Controllers
 {
     public class ProductManagementController : Controller
     {
-        ProductRepository context;
-        ProductCategoryRepository productCategories;
+        InMemoryRepository<Product> context;
+        InMemoryRepository<ProductCategory> productCategories;
         
 
         public ProductManagementController()
         {
-            context = new ProductRepository();
-            productCategories = new ProductCategoryRepository();
+            context = new InMemoryRepository<Product>();
+            productCategories = new InMemoryRepository<ProductCategory>();
         }
         // GET: ProductManagement
         public ActionResult Index()
         {
-            List<Product> products = context.Collection().ToList();
+            List<Product> products = context.Collections().ToList();
             return View(products);
         }
 
@@ -32,7 +32,7 @@ namespace MyArtShop.WebUI.Controllers
         {
             ProductManagerViewModel viewModel = new ProductManagerViewModel();
             viewModel.Product = new Product();
-            viewModel.ProductCategories = productCategories.Collection();
+            viewModel.ProductCategories = productCategories.Collections();
             return View(viewModel);
         }
 
@@ -63,7 +63,7 @@ namespace MyArtShop.WebUI.Controllers
             {
                 ProductManagerViewModel viewModel = new ProductManagerViewModel();
                 viewModel.Product = product;
-                viewModel.ProductCategories = productCategories.Collection();
+                viewModel.ProductCategories = productCategories.Collections();
                 return View(viewModel);
             }
         }
