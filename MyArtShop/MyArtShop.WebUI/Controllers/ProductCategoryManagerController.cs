@@ -1,4 +1,5 @@
-﻿using MyArtShop.Core.Models;
+﻿using MyArtShop.Core.Contracts;
+using MyArtShop.Core.Models;
 using MyArtShopDataAccess.InMemory;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,11 +11,11 @@ namespace MyArtShop.WebUI.Controllers
 {
     public class ProductCategoryManagerController : Controller
     {
-        InMemoryRepository<ProductCategory> context;
+        IRepository<ProductCategory> context;
 
-        public ProductCategoryManagerController()
+        public ProductCategoryManagerController(IRepository<ProductCategory> context)
         {
-            context = new InMemoryRepository<ProductCategory>();
+            this.context = context;
         }
         // GET: ProductManagement
         public ActionResult Index()
