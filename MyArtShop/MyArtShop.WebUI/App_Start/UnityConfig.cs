@@ -3,6 +3,7 @@ using System;
 using Unity;
 using MyArtShop.Core.Models;
 using MyArtShopDataAccess.InMemory;
+using MyArtShopDataAccess.SQL;
 
 namespace MyArtShop.WebUI
 {
@@ -44,8 +45,8 @@ namespace MyArtShop.WebUI
 
             // TODO: Register your type's mappings here.
             // container.RegisterType<IProductRepository, ProductRepository>();
-            container.RegisterType<IRepository<Product>, InMemoryRepository<Product>>();
-            container.RegisterType<IRepository<ProductCategory>, InMemoryRepository<ProductCategory>>();
+            container.RegisterType<IRepository<Product>, SQLRepository<Product>>();
+            container.RegisterType<IRepository<ProductCategory>, SQLRepository<ProductCategory>>();
         }
     }
 }
