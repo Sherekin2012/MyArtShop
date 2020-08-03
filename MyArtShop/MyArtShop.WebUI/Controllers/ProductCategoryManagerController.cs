@@ -20,7 +20,7 @@ namespace MyArtShop.WebUI.Controllers
         // GET: ProductManagement
         public ActionResult Index()
         {
-            List<ProductCategory> productCategories = context.Collections().ToList();
+            List<ProductCategory> productCategories = context.Collection().ToList();
             return View(productCategories);
         }
 

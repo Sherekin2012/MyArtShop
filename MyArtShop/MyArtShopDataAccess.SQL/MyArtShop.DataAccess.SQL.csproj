@@ -56,6 +56,14 @@
     <Compile Include="Migrations\202007300123306_Initial.designer.cs">
       <DependentUpon>202007300123306_Initial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202007300307408_addedProductCategories.cs" />
+    <Compile Include="Migrations\202007300307408_addedProductCategories.designer.cs">
+      <DependentUpon>202007300307408_addedProductCategories.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202008010359353_Empty.cs" />
+    <Compile Include="Migrations\202008010359353_Empty.designer.cs">
+      <DependentUpon>202008010359353_Empty.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SQLRepository.cs" />
@@ -84,6 +92,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202007300123306_Initial.resx">
       <DependentUpon>202007300123306_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202007300307408_addedProductCategories.resx">
+      <DependentUpon>202007300307408_addedProductCategories.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202008010359353_Empty.resx">
+      <DependentUpon>202008010359353_Empty.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

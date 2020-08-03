@@ -64,7 +64,7 @@ namespace MyArtShopDataAccess.InMemory
 
         }
 
-        public IQueryable<T> Collections()
+        public IQueryable<T> Collection()
         {
             return items.AsQueryable();
         }

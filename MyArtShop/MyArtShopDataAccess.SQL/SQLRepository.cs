@@ -18,7 +18,7 @@ namespace MyArtShopDataAccess.SQL
             this.dbSet = context.Set<T>();
         }
 
-        public IQueryable<T> Collections()
+        public IQueryable<T> Collection()
         {
             return dbSet;
         }

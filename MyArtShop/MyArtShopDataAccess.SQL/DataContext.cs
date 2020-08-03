@@ -1,5 +1,6 @@
 ﻿using MyArtShop.Core.Models;
 using System;
+using MyArtShop.Core;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
